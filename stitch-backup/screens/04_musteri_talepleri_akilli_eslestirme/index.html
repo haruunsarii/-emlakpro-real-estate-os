@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-surface":"#283044","background":"#faf8ff","inverse-on-surface":"#eef0ff","on-tertiary":"#ffffff","tertiary":"#040056","secondary-fixed-dim":"#adc6ff","surface-variant":"#dae2fd","on-secondary-fixed":"#001a42","error-container":"#ffdad6","tertiary-fixed-dim":"#c0c1ff","surface-container-highest":"#dae2fd","surface-container-low":"#f2f3ff","surface-tint":"#4f5c8e","secondary-container":"#2170e4","secondary-fixed":"#d8e2ff","on-secondary-fixed-variant":"#004395","surface-container":"#eaedff","on-surface-variant":"#45464f","secondary":"#0058be","on-tertiary-fixed":"#07006c","on-tertiary-container":"#7e82ff","surface-bright":"#faf8ff","primary":"#000f3f","surface-dim":"#d2d9f4","outline":"#767680","tertiary-container":"#0c0092","primary-fixed-dim":"#b7c4fd","outline-variant":"#c6c5d0","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#374475","on-primary":"#ffffff","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#2f2ebe","surface":"#faf8ff","error":"#ba1a1a","surface-container-high":"#e2e7ff","on-surface":"#131b2e","on-error-container":"#93000a","inverse-primary":"#b7c4fd","primary-fixed":"#dce1ff","on-secondary-container":"#fefcff","tertiary-fixed":"#e1e0ff","on-primary-container":"#808dc2","primary-container":"#172554","on-primary-fixed":"#071747","on-background":"#131b2e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","margin-sm":"1rem","margin":"2rem","gutter":"1.5rem","space-xl":"2.25rem","space-md":"1rem","gutter-sm":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"label-sm":["Inter"],"body-md":["Inter"],"caption":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"body-lg":["Inter"],"currency-stat":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"caption":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"currency-stat":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="EmlakPro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrADPXtXvnWWGPKbQHk5XVDZNta7sFeoHNDMnU8r736H-j2R5cbOYpnY0OiCgSUDAk5IQLyyVer26m38rr-ckYwjfbrhk7vW4P8hECLRMrrT7f-hh0HgIywkQxg3jvyA8SIG4QCLuaDfNyen5HaQODfCmywXWTm5Gm32f2p9qvHCtKKG0jBT_qj3-GNFaGLOAjZdKWgOp3yH8deFaRW5ca5aR827gm5UP6bghQ4QsMK2"/><span class="font-headline-sm text-headline-sm text-primary">EmlakPro</span></div><span class="font-caption text-caption bg-surface-container text-on-surface px-space-sm py-space-xs rounded-full">v2.4 Pro</span></div><nav class="flex-1 px-space-sm py-space-sm flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-caption text-caption uppercase text-on-surface-variant tracking-wider">GENEL</div><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="dashboard" href="#">Dashboard</a><div class="px-space-sm pt-space-md pb-space-xs font-caption text-caption uppercase text-on-surface-variant tracking-wider">YÖNETİM</div><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="musteriler" href="#">Müşteriler</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="gayrimenkuller" href="#">Gayrimenkuller</a><a class="flex items-center px-space-sm py-space-sm bg-primary-container text-on-primary-container font-semibold rounded-lg transition-colors font-label-md text-label-md" data-path="musteri-talepleri" href="#">Müşteri Talepleri</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="satis-ve-kiralama" href="#">Satış &amp; Kiralama</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="gorevler-ve-randevular" href="#">Görevler &amp; Randevular</a><div class="px-space-sm pt-space-md pb-space-xs font-caption text-caption uppercase text-on-surface-variant tracking-wider">ANALİZ</div><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="raporlar" href="#">Raporlar</a><div class="px-space-sm pt-space-md pb-space-xs font-caption text-caption uppercase text-on-surface-variant tracking-wider">SİSTEM</div><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="ayarlar" href="#">Ayarlar</a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer"><div class="flex flex-col overflow-hidden pr-space-xs"><span class="font-caption text-caption text-on-surface-variant truncate">Kadıköy Merkez Şube</span><span class="font-label-sm text-label-sm text-primary font-semibold truncate">EmlakPro Prime</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">swap_horiz</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full h-[42px] pl-[40px] pr-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container transition-all placeholder:text-outline" placeholder="Gayrimenkul, müşteri veya talep ara... (⌘K)" type="text"/><kbd class="absolute right-space-md font-caption text-caption bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded">⌘K</kbd></div><span class="hidden xl:inline-flex items-center gap-space-xs bg-surface-container text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-full whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-secondary-container"></span>Aktif Ofis Modu</span></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full font-caption text-[10px] flex items-center justify-center font-bold">3</span></button><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">calendar_today</span></button><div class="flex items-center gap-space-sm pl-space-sm cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9dYSRdosRd7HIGOq46qxl2Wc8F7JODynxyHJrq2xKvzAj_O0UJQRbXT-W1U-_1qtfX4XowYKSwhrEmlL9pwfaF2qZ9DrE5Bp4u8fRr-lY8JOr58WAyphEadd2ND6vYN1DyVk3Eh-Ry_YFqBN2DMo3j8BO_R2tzmDJwqxhPs85IXI_Qzfk9UbM9QBqVyMCJCPw67LaB14oJ0SpWh4QVrAfHYEgo-fS1HojMqR1bnND"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Burak Yılmaz</span><span class="font-caption text-caption text-on-surface-variant leading-tight">Kıdemli Danışman / Ofis Sahibi</span></div><span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface text-[18px] transition-colors">expand_more</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Main Workspace Canvas -->
+<div class="p-space-lg lg:p-margin flex flex-col gap-space-lg max-w-[1600px] w-full mx-auto">
+<!-- Top Action Bar & Page Title -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-caption text-caption text-secondary font-semibold bg-secondary-fixed/40 px-2.5 py-0.5 rounded-full uppercase tracking-wider">Akıllı Portföy Motoru</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+            Canlı Algoritma Aktif
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Müşteri Talepleri &amp; Akıllı Eşleştirme</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Kayıtlı alıcı ve kiracı taleplerini güncel portföy veritabanıyla anlık eşleştirin, kriter skorlarına göre fırsatları hızla satışa dönüştürün.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-center">
+<button class="inline-flex items-center gap-space-xs px-4 py-2.5 bg-surface-container text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-all active:scale-[0.98]" id="refresh-engine-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Eşleştirme Motorunu Çalıştır</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-4 py-2.5 bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-lg hover:bg-surface-container hover:text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Dışa Aktar</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-5 py-2.5 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-primary transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Yeni Talep Oluştur</span>
+</button>
+</div>
+</div>
+<!-- Quick KPIs Metric Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 translate-x-2 -translate-y-2 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Toplam Aktif Talep</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-currency-stat text-currency-stat text-on-surface">184</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Talep</span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="font-caption text-caption bg-surface-container px-2 py-0.5 rounded text-on-surface-variant font-medium">84 Satın Alma</span>
+<span class="font-caption text-caption bg-surface-container-high px-2 py-0.5 rounded text-secondary font-medium">100 Kiralama</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 translate-x-2 -translate-y-2 w-24 h-24 bg-secondary-container/10 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption text-secondary font-semibold uppercase tracking-wider">Yüksek Eşleşme Oranı (%85+)</span>
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-currency-stat text-currency-stat text-secondary">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Talep</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Hemen sunum &amp; yer gösterimi yapılabilir</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 translate-x-2 -translate-y-2 w-24 h-24 bg-surface-container-highest/40 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Yeni Eklenenler</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-currency-stat text-currency-stat text-on-surface">28</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bu Hafta</span>
+</div>
+<div class="mt-2 flex items-center gap-1 text-secondary font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>Geçen haftaya göre +%18 artış</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 translate-x-2 -translate-y-2 w-24 h-24 bg-error-container/20 rounded-full blur-xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Bekleyen Portföy Açığı</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-currency-stat text-currency-stat text-on-surface">14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Talep</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Kriterlere uyan ilan ofis havuzunda yok</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Multi-Filter & Search Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Tabs Bar -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 border-b border-surface-container">
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md whitespace-nowrap transition-all shadow-sm" type="button">
+          Tümü <span class="ml-1 opacity-80">(184)</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all" type="button">
+          Yüksek Eşleşenler <span class="ml-1 font-semibold text-secondary">(42)</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all" type="button">
+          Satın Alma <span class="ml-1">(84)</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all" type="button">
+          Kiralama <span class="ml-1">(100)</span>
+</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all" type="button">
+          Eşleşme Bekleyenler <span class="ml-1 text-outline">(14)</span>
+</button>
+</div>
+<!-- Search and Dropdowns -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-space-sm items-center">
+<!-- Search bar -->
+<div class="xl:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-[42px] pl-10 pr-3 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg border border-surface-container-high focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Müşteri adı, aranan bölge, talep kodu (TLP-...) ara..." type="text"/>
+</div>
+<!-- Mülk Tipi -->
+<div class="xl:col-span-2">
+<div class="relative">
+<select class="w-full h-[42px] px-3 pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg appearance-none border border-surface-container-high focus:outline-none focus:border-secondary transition-all cursor-pointer">
+<option>Mülk Tipi: Tümü</option>
+<option>Daire / Rezidans</option>
+<option>Penthouse / Çatı Dubleksi</option>
+<option>Villa / Müstakil</option>
+<option>Ticari Plaza / Ofis</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">unfold_more</span>
+</div>
+</div>
+<!-- İlçe / Bölge -->
+<div class="xl:col-span-2">
+<div class="relative">
+<select class="w-full h-[42px] px-3 pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg appearance-none border border-surface-container-high focus:outline-none focus:border-secondary transition-all cursor-pointer">
+<option>Bölge: Kadıköy, Beşiktaş...</option>
+<option>Kadıköy (Tüm Mahalleler)</option>
+<option>Beşiktaş / Levent</option>
+<option>Sarıyer &amp; Boğaz Hattı</option>
+<option>Ataşehir / Finans Merkezi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">location_on</span>
+</div>
+</div>
+<!-- Bütçe Aralığı -->
+<div class="xl:col-span-2">
+<div class="relative">
+<select class="w-full h-[42px] px-3 pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg appearance-none border border-surface-container-high focus:outline-none focus:border-secondary transition-all cursor-pointer">
+<option>Bütçe: ₺20M - ₺40M</option>
+<option>₺5.000.000 - ₺15.000.000</option>
+<option>₺15.000.000 - ₺30.000.000</option>
+<option>₺30.000.000 - ₺60.000.000</option>
+<option>₺60.000.000 +</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">payments</span>
+</div>
+</div>
+<!-- Sorumlu Danışman -->
+<div class="xl:col-span-2">
+<div class="relative">
+<select class="w-full h-[42px] px-3 pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg appearance-none border border-surface-container-high focus:outline-none focus:border-secondary transition-all cursor-pointer">
+<option>Danışman: Tümü</option>
+<option>Burak Yılmaz (Kıdemli)</option>
+<option>Mert Can</option>
+<option>Elif Demir</option>
+<option>Selin Akın</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">person</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Two-Panel Master-Detail Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Demand Cards List (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span>Müşteri Talep Akışı</span>
+<span class="font-caption text-caption text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">5 Gösteriliyor</span>
+</span>
+<span class="font-caption text-caption text-secondary cursor-pointer hover:underline flex items-center gap-0.5">
+<span>Yeniden Sırala</span>
+<span class="material-symbols-outlined text-[14px]">sort</span>
+</span>
+</div>
+<!-- Demand Card 1 (Selected Active State) -->
+<div class="demand-card active-demand bg-surface-container-lowest p-space-md rounded-xl shadow-md cursor-pointer transition-all duration-200 ring-2 ring-secondary bg-gradient-to-r from-surface-container-lowest to-surface-container-low/30" data-demand-id="TLP-4821">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption font-semibold text-secondary bg-surface-container px-2 py-0.5 rounded">TLP-4821</span>
+<span class="font-caption text-caption text-on-primary bg-primary-container px-2 py-0.5 rounded font-semibold">VIP Alıcı</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-bold">Selin Vardar</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-caption text-caption bg-secondary-fixed/50 text-secondary px-2.5 py-1 rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                %96 Uyum
+              </span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">12 Mart 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface p-space-sm rounded-lg text-body-sm font-body-sm">
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ARANAN BÖLGE</span>
+<span class="text-on-surface font-medium truncate block">Kadıköy (Moda, Kalamış)</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">BÜTÇE ARALIĞI</span>
+<span class="text-secondary font-bold truncate block">₺25M - ₺30M</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">MÜLK TİPİ</span>
+<span class="text-on-surface font-medium truncate block">Penthouse / Daire (3+1)</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ÖZEL TERCİH</span>
+<span class="text-on-surface font-medium truncate block">Deniz Manzara • Sıfır</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-caption text-[10px] flex items-center justify-center font-bold">BY</span>
+<span class="font-caption text-caption text-on-surface-variant">Danışman: Burak Yılmaz</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span>3 Portföy Eşleşti</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Demand Card 2 -->
+<div class="demand-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90 hover:opacity-100" data-demand-id="TLP-4819">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption font-semibold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">TLP-4819</span>
+<span class="font-caption text-caption bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">Yatırımcı</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold">Kemal Güneş</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-caption text-caption bg-surface-container text-secondary font-semibold px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                %91 Uyum
+              </span>
+<span class="font-caption text-caption text-outline mt-1">11 Mart 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface p-space-sm rounded-lg text-body-sm font-body-sm">
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ARANAN BÖLGE</span>
+<span class="text-on-surface font-medium truncate block">Ataşehir &amp; Finans Mrkz.</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">BÜTÇE ARALIĞI</span>
+<span class="text-on-surface font-bold truncate block">₺80M - ₺120M</span>
+</div>
+<div class="col-span-2">
+<span class="text-on-surface-variant text-[11px] block font-caption">MÜLK TİPİ</span>
+<span class="text-on-surface font-medium truncate block">Ticari Ofis / Komple Plaza Bloğu</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface font-caption text-[10px] flex items-center justify-center font-bold">BY</span>
+<span class="font-caption text-caption text-on-surface-variant">Danışman: Burak Yılmaz</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span>2 Portföy Eşleşti</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Demand Card 3 -->
+<div class="demand-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90 hover:opacity-100" data-demand-id="TLP-4812">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption font-semibold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">TLP-4812</span>
+<span class="font-caption text-caption bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">Kurumsal Kiracı</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold">Zeynep Kaya</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-caption text-caption bg-secondary-fixed/40 text-secondary font-semibold px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                %94 Uyum
+              </span>
+<span class="font-caption text-caption text-outline mt-1">10 Mart 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface p-space-sm rounded-lg text-body-sm font-body-sm">
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ARANAN BÖLGE</span>
+<span class="text-on-surface font-medium truncate block">Levent &amp; Maslak</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">AYLIK KİRA</span>
+<span class="text-on-surface font-bold truncate block">₺120.000 - ₺160.000</span>
+</div>
+<div class="col-span-2">
+<span class="text-on-surface-variant text-[11px] block font-caption">MÜLK TİPİ</span>
+<span class="text-on-surface font-medium truncate block">Plaza Ofis Katı (Metroya Yakın)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface font-caption text-[10px] flex items-center justify-center font-bold">MC</span>
+<span class="font-caption text-caption text-on-surface-variant">Danışman: Mert Can</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span>4 Portföy Eşleşti</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Demand Card 4 -->
+<div class="demand-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90 hover:opacity-100" data-demand-id="TLP-4790">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption font-semibold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">TLP-4790</span>
+<span class="font-caption text-caption bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">Müstakil Arayışı</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold">Ahmet Karaca</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-caption text-caption bg-surface-container text-on-surface-variant font-semibold px-2 py-0.5 rounded-full">
+                %88 Uyum
+              </span>
+<span class="font-caption text-caption text-outline mt-1">8 Mart 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface p-space-sm rounded-lg text-body-sm font-body-sm">
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ARANAN BÖLGE</span>
+<span class="text-on-surface font-medium truncate block">Beykoz, Sarıyer</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">BÜTÇE ARALIĞI</span>
+<span class="text-on-surface font-bold truncate block">₺50M - ₺60M</span>
+</div>
+<div class="col-span-2">
+<span class="text-on-surface-variant text-[11px] block font-caption">MÜLK TİPİ</span>
+<span class="text-on-surface font-medium truncate block">Müstakil Villa (5+2 Geniş Bahçe)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface font-caption text-[10px] flex items-center justify-center font-bold">ED</span>
+<span class="font-caption text-caption text-on-surface-variant">Danışman: Elif Demir</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span>1 Portföy Eşleşti</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Demand Card 5 (Zero Match State) -->
+<div class="demand-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-75 hover:opacity-100" data-demand-id="TLP-4784">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption font-semibold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">TLP-4784</span>
+<span class="font-caption text-caption bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">İlk Ev Alıcısı</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold">Deniz Arslan</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 font-caption text-caption bg-surface-container text-outline px-2 py-0.5 rounded-full font-medium">
+                Eşleşme Yok
+              </span>
+<span class="font-caption text-caption text-outline mt-1">6 Mart 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface p-space-sm rounded-lg text-body-sm font-body-sm">
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">ARANAN BÖLGE</span>
+<span class="text-on-surface font-medium truncate block">Üsküdar &amp; Çengelköy</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-[11px] block font-caption">BÜTÇE ARALIĞI</span>
+<span class="text-on-surface font-bold truncate block">₺14M - ₺18M</span>
+</div>
+<div class="col-span-2">
+<span class="text-on-surface-variant text-[11px] block font-caption">MÜLK TİPİ</span>
+<span class="text-on-surface font-medium truncate block">Konut (2+1 veya 3+1 Daire)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface font-caption text-[10px] flex items-center justify-center font-bold">MC</span>
+<span class="font-caption text-caption text-on-surface-variant">Danışman: Mert Can</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-medium flex items-center gap-1">
+<span>0 Portföy (Eşleşme Aranıyor)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Detailed Matching Engine View (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Selected Demand Detail Header Panel -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary font-headline-md font-bold">
+                SV
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Selin Vardar</h2>
+<span class="font-caption text-caption bg-secondary-fixed/50 text-secondary px-2 py-0.5 rounded font-semibold">TLP-4821</span>
+<span class="font-caption text-caption bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                    Aktif Sıcak Talep
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  Kayıt: 12 Mart 2024 • Danışman: <span class="font-semibold text-on-surface">Burak Yılmaz</span> • Telefon: +90 (532) 412 88**
+                </span>
+</div>
+</div>
+<!-- Header Quick Actions -->
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-center" title="WhatsApp İle Paylaş" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-center" title="PDF Sunum Oluştur" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Düzenle</span>
+</button>
+</div>
+</div>
+<!-- Matching Engine Scoring Breakdown -->
+<div class="bg-surface p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_awesome</span>
+<span>Kriter Uygunluk Analizi (Algoritmik Ağırlık)</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">%96 Genel Skor</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-caption text-caption text-on-surface-variant">Bütçe Uyumu</span>
+<span class="font-caption text-caption font-bold text-secondary">%100</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-caption text-caption text-on-surface-variant">Lokasyon</span>
+<span class="font-caption text-caption font-bold text-secondary">%100</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-caption text-caption text-on-surface-variant">m² &amp; Oda</span>
+<span class="font-caption text-caption font-bold text-secondary">%95</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-caption text-caption text-on-surface-variant">Bina Yaşı / Otopark</span>
+<span class="font-caption text-caption font-bold text-secondary">%90</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Matched Properties Listing Deck -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-2">
+<span>Selin Vardar İçin Önerilen 3 Eşleşmiş Portföy</span>
+<span class="font-caption text-caption bg-secondary-fixed/50 text-secondary px-2 py-0.5 rounded-full font-bold">Filtrelenmiş</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant">Skora göre sıralandı</span>
+</div>
+<!-- Property Card 1 (Top Match - 98%) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row group">
+<div class="md:w-5/12 h-52 md:h-auto relative overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxurious waterfront penthouse terrace in Moda Kadikoy overlooking Prince Islands and Marmara Sea during golden hour, architectural photograph, minimalist modern decor, deep navy ocean tones, clean glass railings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoa8uO9687uOhrYzwv6-EVmym9drMml24n_Y__YAsCZiKCpgTTe4LvOnSnJzBKtyXj729XdF_IUT689EDMFWobspQHVbeu68XB35HIGbQ7zF-GQ5uBq4d7x1lzf9faLABMwwr18lXmDZpMq3EI5m9nDvyNOrs-ViVQJJ28BhuvvC4Pk5LyzbOnaPUJnLE6efH-G2tXFcn2kefqHhYiX-wZ1lvM56FzO9winU5HOIOu"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="font-caption text-caption bg-primary-container text-on-primary font-bold px-2 py-1 rounded shadow-sm">PORT-8841</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="font-caption text-caption bg-secondary-container text-on-secondary font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+                  %98 Uyum
+                </span>
+</div>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="font-caption text-caption bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface px-2 py-0.5 rounded font-medium">Kat Mülkiyetli</span>
+</div>
+</div>
+<div class="p-space-md md:w-7/12 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-currency-stat text-currency-stat text-primary font-bold">₺28.500.000</span>
+<span class="font-caption text-caption bg-secondary-fixed/30 text-secondary px-2 py-0.5 rounded font-medium">Bütçeye Tam Uygun</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold leading-tight line-clamp-1">
+                  Moda Sahilinde Panoramik Adalar &amp; Deniz Manzaralı Penthouse
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Moda Sahil Kordonu, Caferağa, Kadıköy</span>
+</p>
+<div class="flex items-center gap-3 my-space-sm text-body-sm font-body-sm text-on-surface bg-surface p-2 rounded-lg">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">square_foot</span>
+<span class="font-semibold">185 m²</span> net
+                  </div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span class="font-semibold">3+1</span>
+</div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span>3. Kat (Dublex)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded text-[11px] font-caption text-on-surface-variant flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px] flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong>Neden Eşleşti:</strong> Müşterinin aradığı kesintisiz deniz manzarası ve Moda lokasyonuyla birebir örtüşüyor.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-space-sm mt-space-xs border-t border-surface-container">
+<button class="text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-0.5" type="button">
+<span>Detay Gör</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">calendar_add_on</span>
+<span>Yer Gösterimi Planla</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">send</span>
+<span>Sunum Gönder</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Property Card 2 (Match 94%) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row group">
+<div class="md:w-5/12 h-52 md:h-auto relative overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end modern luxury apartment interior in Caddebostan Istanbul, open floor plan living room, expansive floor-to-ceiling windows, warm natural oak floors, architectural lighting, marble accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhUPbUcbiUWxsWwrogYnLb40O9YC5f27PtfhY0xgqJuGv74oF_zA0o7I5tvszE9S59usTfHoSxumjYYoBsyPHTrXzWRl2epU2O3Vc2CGpzw4nLiXlzuBk63wgGan8nHO72SWeQ6RJwhxC4bE83B8oE6WwqPdbkh7qa780KLR1VKkWWRFT85-t8mC8pXmILaw67-HAh6WW-NrKlpK4Wz3s0bZPm4W2VeWp0aDsKIq7U"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="font-caption text-caption bg-primary-container text-on-primary font-bold px-2 py-1 rounded shadow-sm">PORT-7902</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="font-caption text-caption bg-secondary-fixed/80 text-secondary font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+                  %94 Uyum
+                </span>
+</div>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="font-caption text-caption bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface px-2 py-0.5 rounded font-medium">Sıfır Bina</span>
+</div>
+</div>
+<div class="p-space-md md:w-7/12 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-currency-stat text-currency-stat text-primary font-bold">₺26.250.000</span>
+<span class="font-caption text-caption bg-surface-container text-on-surface-variant px-2 py-0.5 rounded font-medium">Tavan Altı Fiyat</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold leading-tight line-clamp-1">
+                  Caddebostan Bağdat Caddesi İkinci Parselde Ferah 4+1
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Bağdat Caddesi Paraleli, Caddebostan, Kadıköy</span>
+</p>
+<div class="flex items-center gap-3 my-space-sm text-body-sm font-body-sm text-on-surface bg-surface p-2 rounded-lg">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">square_foot</span>
+<span class="font-semibold">210 m²</span> net
+                  </div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span class="font-semibold">4+1</span>
+</div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">garage</span>
+<span>2 Araç Kapalı Otopark</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded text-[11px] font-caption text-on-surface-variant flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px] flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong>Neden Eşleşti:</strong> Sıfır bina, geniş m² ve tahsisli 2 araçlık kapalı otopark kriterlerini eksiksiz karşılıyor.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-space-sm mt-space-xs border-t border-surface-container">
+<button class="text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-0.5" type="button">
+<span>Detay Gör</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">calendar_add_on</span>
+<span>Yer Gösterimi Planla</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">send</span>
+<span>Sunum Gönder</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Property Card 3 (Match 92%) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row group">
+<div class="md:w-5/12 h-52 md:h-auto relative overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Marina view apartment balcony in Kalamis Kadikoy Istanbul with luxury yachts docked in marina, sunset reflections, modern outdoor lounge furniture, clean glass railings, high end real estate photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ZsJfdgYwem47qa2geWfRXJHs2mhQHbFtHlVFTlbnf8aT6FTPlNbRyQDr-TvK-ZJ_bbqj32OlTJyayTuP_6Huuje3LqY6-CWjel3bweBew8cPGLCW3XtNaC8r9NRYfyl0RLeyDFNeGPsw_lMFBnFFBP7NTBNer_aUzXV5XbpPGog3yc49QXz_DaMLKjnF7tICUiKebsNSzmrpPeRjMS8TJwDtdr1L10PqY1vaXP01"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="font-caption text-caption bg-primary-container text-on-primary font-bold px-2 py-1 rounded shadow-sm">PORT-7630</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="font-caption text-caption bg-secondary-fixed/60 text-secondary font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+                  %92 Uyum
+                </span>
+</div>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="font-caption text-caption bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface px-2 py-0.5 rounded font-medium">Marina Cepheli</span>
+</div>
+</div>
+<div class="p-space-md md:w-7/12 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-currency-stat text-currency-stat text-primary font-bold">₺29.800.000</span>
+<span class="font-caption text-caption bg-surface-container text-on-surface-variant px-2 py-0.5 rounded font-medium">Bütçe Tavanında</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 font-semibold leading-tight line-clamp-1">
+                  Fenerbahçe Kalamış Marina Manzaralı Lüks 3+1
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Kalamış Koyu, Fenerbahçe Mh., Kadıköy</span>
+</p>
+<div class="flex items-center gap-3 my-space-sm text-body-sm font-body-sm text-on-surface bg-surface p-2 rounded-lg">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">square_foot</span>
+<span class="font-semibold">170 m²</span> net
+                  </div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span class="font-semibold">3+1</span>
+</div>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">balcony</span>
+<span>Geniş Teras Balkon</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded text-[11px] font-caption text-on-surface-variant flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px] flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong>Neden Eşleşti:</strong> Müşterinin öncelikli gördüğü Kadıköy sahil/marina aksında, tam güvenlikli prestijli sitede.</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-space-sm mt-space-xs border-t border-surface-container">
+<button class="text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-0.5" type="button">
+<span>Detay Gör</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">calendar_add_on</span>
+<span>Yer Gösterimi Planla</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">send</span>
+<span>Sunum Gönder</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Comparison Catalog Action Footer Box -->
+<div class="bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary p-space-lg rounded-xl shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest/15 backdrop-blur-md flex items-center justify-center flex-shrink-0 text-white">
+<span class="material-symbols-outlined text-[26px]">forward_to_inbox</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Müşteriye Karşılaştırmalı E-Katalog Gönder</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                Seçili 3 eşleşen ilanı tek tıkla branded PDF karşılaştırma tablosu veya interaktif WhatsApp bağlantısı olarak Selin Vardar'a iletin.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0 w-full sm:w-auto justify-end">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 text-on-primary font-label-md text-label-md transition-all" type="button">
+              Şablonu İncele
+            </button>
+<button class="px-5 py-2.5 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md font-semibold transition-all shadow-md active:scale-95 flex items-center gap-1.5" id="send-catalog-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Tek Tıkla Gönder</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interactions for demand list selection & buttons
+  document.addEventListener('DOMContentLoaded', function () {
+    const demandCards = document.querySelectorAll('.demand-card');
+    demandCards.forEach(card => {
+      card.addEventListener('click', function () {
+        demandCards.forEach(c => {
+          c.classList.remove('ring-2', 'ring-secondary', 'bg-gradient-to-r', 'from-surface-container-lowest', 'to-surface-container-low/30');
+          c.classList.add('opacity-90');
+        });
+        this.classList.add('ring-2', 'ring-secondary', 'bg-gradient-to-r', 'from-surface-container-lowest', 'to-surface-container-low/30');
+        this.classList.remove('opacity-90', 'opacity-75');
+      });
+    });
+
+    // Refresh matching engine feedback
+    const refreshBtn = document.getElementById('refresh-engine-btn');
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', function () {
+        const icon = this.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.classList.add('animate-spin');
+          setTimeout(() => {
+            icon.classList.remove('animate-spin');
+          }, 800);
+        }
+      });
+    }
+
+    // Quick catalog send micro-feedback
+    const sendBtn = document.getElementById('send-catalog-btn');
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function () {
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> <span>Gönderildi!</span>';
+        this.classList.add('bg-emerald-600');
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('bg-emerald-600');
+        }, 2200);
+      });
+    }
+
+    // Filter tab toggles
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        tabBtns.forEach(b => {
+          b.className = 'tab-btn px-3.5 py-1.5 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all';
+        });
+        this.className = 'tab-btn px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md whitespace-nowrap transition-all shadow-sm';
+      });
+    });
+  });
+</script></main></div></body></html>
